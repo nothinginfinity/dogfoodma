@@ -1,0 +1,59 @@
+{
+  "name": "AFO Mobile Visual Runtime",
+  "repo": "dogfoodma",
+  "version": "0.0.1",
+  "description": "Mobile-first visual runtime MCP/app for generating constrained Three.js frontends that bind cleanly to Cloudflare backends.",
+  "tools": [
+    {
+      "name": "create_mobile_scene_spec",
+      "description": "Create a constrained mobile-first visual scene spec.",
+      "input": [
+        "name",
+        "theme",
+        "layout",
+        "dataSource",
+        "items"
+      ]
+    },
+    {
+      "name": "compile_three_mobile_page",
+      "description": "Compile a scene spec into Worker-safe HTML using Three.js from CDN.",
+      "input": [
+        "sceneSpec"
+      ]
+    },
+    {
+      "name": "optimize_for_phone",
+      "description": "Apply mobile rendering constraints like pixel ratio cap, low-power mode, and texture budget.",
+      "input": [
+        "sceneSpec",
+        "budget"
+      ]
+    },
+    {
+      "name": "bind_d1_rows_to_objects",
+      "description": "Map backend rows into 3D visual objects.",
+      "input": [
+        "rows",
+        "mapping"
+      ]
+    },
+    {
+      "name": "bind_r2_images_to_textures",
+      "description": "Map R2 image URLs into lazy-loaded Three.js textures.",
+      "input": [
+        "items",
+        "urlField"
+      ]
+    },
+    {
+      "name": "generate_visual_receipt",
+      "description": "Return a deploy/test receipt for a generated mobile visual app.",
+      "input": [
+        "sceneSpec",
+        "routes",
+        "budget"
+      ]
+    }
+  ]
+}

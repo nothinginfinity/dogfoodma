@@ -1,0 +1,49 @@
+{
+  "name": "AFO Photo Galaxy",
+  "theme": "neon-space",
+  "renderer": "three-webgl",
+  "mobile": {
+    "pixelRatioCap": 2,
+    "targetFps": 45,
+    "lowPowerMode": true,
+    "maxObjects": 180,
+    "textureStrategy": "lazy"
+  },
+  "data": {
+    "source": "inline",
+    "binding": "future:d1.photos + r2.photos",
+    "items": [
+      {
+        "id": "alpha",
+        "title": "Memory Alpha",
+        "cluster": "Los Angeles",
+        "url": ""
+      },
+      {
+        "id": "beta",
+        "title": "Memory Beta",
+        "cluster": "Tokyo",
+        "url": ""
+      },
+      {
+        "id": "gamma",
+        "title": "Memory Gamma",
+        "cluster": "London",
+        "url": ""
+      },
+      {
+        "id": "delta",
+        "title": "Memory Delta",
+        "cluster": "Sydney",
+        "url": ""
+      }
+    ]
+  },
+  "scene": {
+    "layout": "orbital-gallery",
+    "camera": "touch-fly",
+    "hud": true,
+    "controls": "one-finger-drag-plus-buttons",
+    "fallback": "2d-card-grid"
+  }
+}

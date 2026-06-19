@@ -1,0 +1,25 @@
+{
+  "name": "Premium Cockpit App",
+  "theme": "black_glass_gold",
+  "layout": "spherical_constellation",
+  "hud": "luxury_cockpit",
+  "materials": "glass_cards_emissive_edges",
+  "lighting": "soft_studio_rim",
+  "controls": "mobile_fly_with_snap_focus",
+  "mobile": {
+    "pixelRatioCap": 2,
+    "targetFps": 45,
+    "lowPowerMode": true,
+    "maxObjects": 180
+  },
+  "data": {
+    "source": "d1",
+    "binding": "DB",
+    "table": "projects",
+    "items": [
+      {"id":"project_alpha","title":"Project Alpha","cluster":"Active"},
+      {"id":"project_beta","title":"Project Beta","cluster":"Review"},
+      {"id":"project_gamma","title":"Project Gamma","cluster":"Archive"}
+    ]
+  }
+}

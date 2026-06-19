@@ -1,23 +1,31 @@
 {
   "name": "AFO Mobile Visual Runtime",
-  "version": "0.0.3",
-  "description": "Premium frontend MCP-style visual compiler for agent-built mobile visual apps.",
+  "version": "0.0.4",
+  "description": "Frontend MCP-style cockpit runtime with adapter contracts and smoke receipts.",
   "base_url": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev",
   "discovery": {
-    "llms": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/llms.txt",
-    "openapi": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/openapi.json",
-    "tools": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/mcp/tools",
-    "schema": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/mcp/schema"
+    "llms": "/llms.txt",
+    "openapi": "/openapi.json",
+    "manifest": "/mcp/manifest",
+    "resources": "/mcp/resources",
+    "prompts": "/mcp/prompts",
+    "tool_schema": "/mcp/tool-schema",
+    "tools": "/mcp/tools",
+    "schema": "/mcp/schema"
   },
   "actions": [
-    {"id":"create_design_system","method":"POST","endpoint":"/mcp/call"},
-    {"id":"create_scene_spec","method":"POST","endpoint":"/mcp/call"},
-    {"id":"create_premium_mobile_shell","method":"POST","endpoint":"/mcp/call"},
-    {"id":"compile_three_worker_page","method":"POST","endpoint":"/mcp/call"},
-    {"id":"compile_three_object_graph","method":"POST","endpoint":"/mcp/call"},
-    {"id":"compile_r3f_component_tree","method":"POST","endpoint":"/mcp/call"},
-    {"id":"compile_gltf_manifest","method":"POST","endpoint":"/mcp/call"},
-    {"id":"validate_mobile_performance_budget","method":"POST","endpoint":"/mcp/call"},
-    {"id":"generate_visual_receipt","method":"POST","endpoint":"/mcp/call"}
+    "create_design_system",
+    "create_scene_spec",
+    "create_premium_mobile_shell",
+    "compile_three_worker_page",
+    "compile_three_object_graph",
+    "compile_r3f_component_tree",
+    "compile_gltf_manifest",
+    "validate_mobile_performance_budget",
+    "generate_visual_receipt",
+    "preview_d1_adapter",
+    "create_r2_asset_manifest",
+    "create_kv_theme_config",
+    "create_smoke_receipt"
   ]
 }

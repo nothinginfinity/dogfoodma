@@ -1,59 +1,16 @@
 {
   "name": "AFO Mobile Visual Runtime",
-  "repo": "dogfoodma",
-  "version": "0.0.1",
-  "description": "Mobile-first visual runtime MCP/app for generating constrained Three.js frontends that bind cleanly to Cloudflare backends.",
+  "version": "0.0.3",
+  "description": "Premium frontend MCP-style runtime for agent-built mobile visual apps.",
   "tools": [
-    {
-      "name": "create_mobile_scene_spec",
-      "description": "Create a constrained mobile-first visual scene spec.",
-      "input": [
-        "name",
-        "theme",
-        "layout",
-        "dataSource",
-        "items"
-      ]
-    },
-    {
-      "name": "compile_three_mobile_page",
-      "description": "Compile a scene spec into Worker-safe HTML using Three.js from CDN.",
-      "input": [
-        "sceneSpec"
-      ]
-    },
-    {
-      "name": "optimize_for_phone",
-      "description": "Apply mobile rendering constraints like pixel ratio cap, low-power mode, and texture budget.",
-      "input": [
-        "sceneSpec",
-        "budget"
-      ]
-    },
-    {
-      "name": "bind_d1_rows_to_objects",
-      "description": "Map backend rows into 3D visual objects.",
-      "input": [
-        "rows",
-        "mapping"
-      ]
-    },
-    {
-      "name": "bind_r2_images_to_textures",
-      "description": "Map R2 image URLs into lazy-loaded Three.js textures.",
-      "input": [
-        "items",
-        "urlField"
-      ]
-    },
-    {
-      "name": "generate_visual_receipt",
-      "description": "Return a deploy/test receipt for a generated mobile visual app.",
-      "input": [
-        "sceneSpec",
-        "routes",
-        "budget"
-      ]
-    }
+    {"name":"create_design_system","description":"Create premium design tokens from a frontend intent spec."},
+    {"name":"create_scene_spec","description":"Normalize a high-level scene spec and attach performance budget."},
+    {"name":"create_premium_mobile_shell","description":"Compile a premium mobile frontend shell."},
+    {"name":"compile_three_worker_page","description":"Compile mobile Worker-safe visual HTML."},
+    {"name":"compile_three_object_graph","description":"Export a Three.js-style object graph."},
+    {"name":"compile_r3f_component_tree","description":"Export a React Three Fiber component-tree contract."},
+    {"name":"compile_gltf_manifest","description":"Export a glTF-style manifest contract."},
+    {"name":"validate_mobile_performance_budget","description":"Estimate mobile draw calls and object budget."},
+    {"name":"generate_visual_receipt","description":"Generate a visual compilation receipt."}
   ]
 }

@@ -1,23 +1,24 @@
 # AFO Mobile Visual Runtime
 
-Version: 0.0.2
+Version: 0.0.3
 
-AFO Mobile Visual Runtime is a mobile-first visual runtime for agent-built apps. It compiles JSON scene specs into touch-first Three.js web apps designed for Cloudflare Workers.
+Dogfoodma v0.03 is a premium frontend MCP-style runtime for agent-built mobile visual apps.
 
 Live runtime:
 https://afo-mobile-visual-runtime.jaredtechfit.workers.dev
 
-Primary routes:
-- /health
+Routes:
+- /studio
 - /mcp/tools
 - /mcp/schema
 - /mcp/call
-- /api/sample-scene
-- /api/scene/validate
-- /api/scene/optimize
+- /api/design/presets
+- /api/design/compile
+- /api/scene/export/three-json
+- /api/scene/export/r3f
+- /api/scene/export/gltf-manifest
 - /api/compile
-- /api/receipt
 - /openapi.json
 - /agent-actions
 
-Use /api/sample-scene to get an example. Use /api/scene/validate before compile. Use /api/compile to generate HTML. Use /mcp/call for tool-style calls.
+Agents should create high-level design and scene specs, then let Dogfoodma compile the frontend output.

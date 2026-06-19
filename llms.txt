@@ -1,31 +1,24 @@
 # AFO Mobile Visual Runtime
 
-Version: 0.0.3.1
+Version: 0.0.4
 
-Dogfoodma v0.03.1 is the cockpit restoration patch. It restores the real interactive Three.js frontend while keeping the premium MCP-style routes and compiler contracts.
+Dogfoodma v0.04 preserves the passing cockpit UI from v0.03.1 and adds formal MCP-style manifest routes, resource discovery, prompt discovery, tool schemas, adapter contracts, and smoke receipts.
 
 Live runtime:
 https://afo-mobile-visual-runtime.jaredtechfit.workers.dev
 
-Important browser checks:
-- 3D scene renders
-- drag/fly works
-- Brake works
-- Boost works
-- Reset works
-- speed label updates
-- crosshair focuses nodes
-- tapping a node opens metadata drawer
-- top nav opens Studio, Tools, Schema, Sample, and Receipt panels
+New v0.04 routes:
+- /mcp/manifest
+- /mcp/resources
+- /mcp/prompts
+- /mcp/tool-schema
+- /api/adapters/d1/preview
+- /api/adapters/r2/manifest
+- /api/adapters/kv/theme
+- /api/scene/from-d1
+- /api/assets/from-r2
+- /api/smoke
+- /api/smoke/browser-contract
+- /api/receipt/visual
 
-Agent routes:
-- /mcp/tools
-- /mcp/schema
-- /mcp/call
-- /api/design/presets
-- /api/design/compile
-- /api/scene/export/three-json
-- /api/scene/export/r3f
-- /api/scene/export/gltf-manifest
-- /api/compile
-- /api/receipt
+Agents should use /mcp/manifest first, then /mcp/tool-schema, then /mcp/call.

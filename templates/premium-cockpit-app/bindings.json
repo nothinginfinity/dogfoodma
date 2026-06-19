@@ -1,0 +1,20 @@
+{
+  "d1": {
+    "binding": "DB",
+    "table": "projects",
+    "idField": "id",
+    "titleField": "title",
+    "clusterField": "status"
+  },
+  "r2": {
+    "binding": "ASSETS",
+    "bucket": "PROJECT_ASSETS",
+    "prefix": "assets/",
+    "urlField": "image_url"
+  },
+  "kv": {
+    "binding": "CONFIG",
+    "namespace": "APP_CONFIG",
+    "themeKey": "theme"
+  }
+}

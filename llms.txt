@@ -1,14 +1,24 @@
 # AFO Mobile Visual Runtime
 
-Version: 0.0.3
+Version: 0.0.3.1
 
-Dogfoodma v0.03 is a premium frontend MCP-style runtime for agent-built mobile visual apps.
+Dogfoodma v0.03.1 is the cockpit restoration patch. It restores the real interactive Three.js frontend while keeping the premium MCP-style routes and compiler contracts.
 
 Live runtime:
 https://afo-mobile-visual-runtime.jaredtechfit.workers.dev
 
-Use these routes:
-- /studio
+Important browser checks:
+- 3D scene renders
+- drag/fly works
+- Brake works
+- Boost works
+- Reset works
+- speed label updates
+- crosshair focuses nodes
+- tapping a node opens metadata drawer
+- top nav opens Studio, Tools, Schema, Sample, and Receipt panels
+
+Agent routes:
 - /mcp/tools
 - /mcp/schema
 - /mcp/call
@@ -18,7 +28,4 @@ Use these routes:
 - /api/scene/export/r3f
 - /api/scene/export/gltf-manifest
 - /api/compile
-- /openapi.json
-- /agent-actions
-
-Agents should create high-level design and scene specs, then let Dogfoodma compile the frontend output.
+- /api/receipt

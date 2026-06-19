@@ -1,9 +1,9 @@
 {
   "name": "dogfoodma",
-  "version": "0.0.4",
+  "version": "0.0.4-1",
   "private": false,
   "type": "module",
-  "description": "Frontend MCP-style cockpit runtime with adapter contracts and smoke receipts.",
+  "description": "Frontend MCP-style cockpit runtime with reusable template discovery.",
   "scripts": {
     "check": "node scripts/check.mjs"
   }

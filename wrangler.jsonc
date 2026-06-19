@@ -1,13 +1,8 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "afo-mobile-visual-runtime",
   "main": "src/worker.js",
   "compatibility_date": "2026-06-18",
   "observability": {
     "enabled": true
-  },
-  "vars": {
-    "AFO_RUNTIME_NAME": "AFO Mobile Visual Runtime",
-    "AFO_RUNTIME_VERSION": "0.0.1"
   }
 }

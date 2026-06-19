@@ -1,0 +1,21 @@
+{
+  "name": "AFO Mobile Visual Runtime",
+  "version": "0.0.2",
+  "description": "Agent-callable mobile visual runtime for compiling constrained Three.js scenes.",
+  "base_url": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev",
+  "discovery": {
+    "llms": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/llms.txt",
+    "openapi": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/openapi.json",
+    "tools": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/mcp/tools",
+    "schema": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/mcp/schema"
+  },
+  "actions": [
+    {"id":"create_mobile_scene_spec","method":"POST","endpoint":"/mcp/call"},
+    {"id":"validate_scene_spec","method":"POST","endpoint":"/mcp/call"},
+    {"id":"optimize_for_phone","method":"POST","endpoint":"/mcp/call"},
+    {"id":"compile_three_mobile_page","method":"POST","endpoint":"/mcp/call"},
+    {"id":"bind_d1_rows_to_objects","method":"POST","endpoint":"/mcp/call"},
+    {"id":"bind_r2_images_to_textures","method":"POST","endpoint":"/mcp/call"},
+    {"id":"generate_visual_receipt","method":"POST","endpoint":"/mcp/call"}
+  ]
+}

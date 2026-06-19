@@ -1,0 +1,27 @@
+{
+  "name": "Dogfoodma Premium Scene",
+  "theme": "black_glass_gold",
+  "layout": "spherical_constellation",
+  "hud": "luxury_cockpit",
+  "materials": "glass_cards_emissive_edges",
+  "lighting": "soft_studio_rim",
+  "controls": "mobile_fly_with_snap_focus",
+  "mobile": {
+    "pixelRatioCap": 2,
+    "targetFps": 45,
+    "lowPowerMode": true,
+    "maxObjects": 180
+  },
+  "data": {
+    "source": "inline",
+    "binding": "future:d1.projects+r2.assets",
+    "items": [
+      {"id":"node_0","title":"Design System","cluster":"Dogfoodma"},
+      {"id":"node_1","title":"Scene Compiler","cluster":"Dogfoodma"},
+      {"id":"node_2","title":"R2 Textures","cluster":"Assets"},
+      {"id":"node_3","title":"D1 Rows","cluster":"Data"},
+      {"id":"node_4","title":"MCP Tools","cluster":"Agents"},
+      {"id":"node_5","title":"Visual Receipt","cluster":"Receipts"}
+    ]
+  }
+}

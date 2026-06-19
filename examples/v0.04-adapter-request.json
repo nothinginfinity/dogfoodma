@@ -1,0 +1,20 @@
+{
+  "d1": {
+    "binding": "DB",
+    "table": "projects",
+    "rows": [
+      {"id":"p1","title":"Project Alpha","cluster":"Active"},
+      {"id":"p2","title":"Project Beta","cluster":"Review"}
+    ]
+  },
+  "r2": {
+    "bucket": "PROJECT_ASSETS",
+    "prefix": "assets/",
+    "files": ["hero.glb", "texture-alpha.webp"]
+  },
+  "kv": {
+    "namespace": "APP_CONFIG",
+    "key": "theme",
+    "theme": "black_glass_gold"
+  }
+}

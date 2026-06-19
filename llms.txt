@@ -1,0 +1,23 @@
+# AFO Mobile Visual Runtime
+
+Version: 0.0.2
+
+AFO Mobile Visual Runtime is a mobile-first visual runtime for agent-built apps. It compiles JSON scene specs into touch-first Three.js web apps designed for Cloudflare Workers.
+
+Live runtime:
+https://afo-mobile-visual-runtime.jaredtechfit.workers.dev
+
+Primary routes:
+- /health
+- /mcp/tools
+- /mcp/schema
+- /mcp/call
+- /api/sample-scene
+- /api/scene/validate
+- /api/scene/optimize
+- /api/compile
+- /api/receipt
+- /openapi.json
+- /agent-actions
+
+Use /api/sample-scene to get an example. Use /api/scene/validate before compile. Use /api/compile to generate HTML. Use /mcp/call for tool-style calls.

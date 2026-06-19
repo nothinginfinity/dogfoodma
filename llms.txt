@@ -7,7 +7,7 @@ Dogfoodma v0.03 is a premium frontend MCP-style runtime for agent-built mobile v
 Live runtime:
 https://afo-mobile-visual-runtime.jaredtechfit.workers.dev
 
-Routes:
+Use these routes:
 - /studio
 - /mcp/tools
 - /mcp/schema

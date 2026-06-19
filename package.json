@@ -1,9 +1,9 @@
 {
   "name": "dogfoodma",
-  "version": "0.0.3",
+  "version": "0.0.3-1",
   "private": false,
   "type": "module",
-  "description": "Premium frontend MCP-style runtime for agent-built mobile visual apps.",
+  "description": "Cockpit-restored premium frontend MCP-style runtime for agent-built mobile visual apps.",
   "scripts": {
     "check": "node scripts/check.mjs"
   }

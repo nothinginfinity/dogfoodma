@@ -1,1 +1,10 @@
-{"name":"dogfoodma","version":"0.0.1","description":"AFO Mobile Visual Runtime v0.01","type":"module","scripts":{"dev":"wrangler dev src/worker.js","deploy":"wrangler deploy","check":"node scripts/check.mjs"},"devDependencies":{"wrangler":"^4.0.0"}}
+{
+  "name": "dogfoodma",
+  "version": "0.0.3",
+  "private": false,
+  "type": "module",
+  "description": "Premium frontend MCP-style runtime for agent-built mobile visual apps.",
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  }
+}

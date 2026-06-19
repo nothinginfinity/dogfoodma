@@ -1,0 +1,19 @@
+{
+  "theme": "black_glass_gold",
+  "colors": {
+    "background": "#03040a",
+    "accent": "#ffd76b",
+    "accent2": "#74f7ff",
+    "panel": "rgba(8,10,20,.72)",
+    "text": "#f8fbff"
+  },
+  "radius": {
+    "panel": 24,
+    "button": 999,
+    "card": 28
+  },
+  "motion": {
+    "ease": "cubic-bezier(.2,.9,.2,1)",
+    "durationMs": 420
+  }
+}

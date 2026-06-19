@@ -1,0 +1,23 @@
+{
+  "id": "premium-cockpit-app",
+  "name": "Premium Cockpit App",
+  "version": "0.04.1",
+  "runtime": "AFO Mobile Visual Runtime",
+  "runtimeVersion": "0.0.4",
+  "description": "Reusable Dogfoodma mobile cockpit template for data-bound frontend apps.",
+  "entry": "scene.json",
+  "theme": "theme.json",
+  "bindings": "bindings.json",
+  "capabilities": [
+    "mobile-cockpit-ui",
+    "three-scene-shell",
+    "d1-row-binding",
+    "r2-asset-manifest",
+    "kv-theme-config",
+    "visual-smoke-receipt"
+  ],
+  "compile": {
+    "endpoint": "/api/compile",
+    "method": "POST"
+  }
+}

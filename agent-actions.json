@@ -1,7 +1,7 @@
 {
   "name": "AFO Mobile Visual Runtime",
   "version": "0.0.3",
-  "description": "Premium frontend MCP-style visual compiler for agent-built mobile Three.js apps.",
+  "description": "Premium frontend MCP-style visual compiler for agent-built mobile visual apps.",
   "base_url": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev",
   "discovery": {
     "llms": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/llms.txt",
@@ -10,24 +10,14 @@
     "schema": "https://afo-mobile-visual-runtime.jaredtechfit.workers.dev/mcp/schema"
   },
   "actions": [
-    "create_design_system",
-    "create_scene_spec",
-    "create_premium_mobile_shell",
-    "create_hud_overlay",
-    "create_spherical_node_layout",
-    "create_orbital_gallery",
-    "create_timeline_tunnel",
-    "create_project_showroom",
-    "create_data_cockpit",
-    "create_material_palette",
-    "create_lighting_rig",
-    "create_motion_profile",
-    "create_touch_control_profile",
-    "compile_three_object_graph",
-    "compile_three_worker_page",
-    "compile_r3f_component_tree",
-    "compile_gltf_manifest",
-    "validate_mobile_performance_budget",
-    "generate_visual_receipt"
+    {"id":"create_design_system","method":"POST","endpoint":"/mcp/call"},
+    {"id":"create_scene_spec","method":"POST","endpoint":"/mcp/call"},
+    {"id":"create_premium_mobile_shell","method":"POST","endpoint":"/mcp/call"},
+    {"id":"compile_three_worker_page","method":"POST","endpoint":"/mcp/call"},
+    {"id":"compile_three_object_graph","method":"POST","endpoint":"/mcp/call"},
+    {"id":"compile_r3f_component_tree","method":"POST","endpoint":"/mcp/call"},
+    {"id":"compile_gltf_manifest","method":"POST","endpoint":"/mcp/call"},
+    {"id":"validate_mobile_performance_budget","method":"POST","endpoint":"/mcp/call"},
+    {"id":"generate_visual_receipt","method":"POST","endpoint":"/mcp/call"}
   ]
 }
